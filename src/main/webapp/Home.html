@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel='stylesheet' type='text/css' href='Employee_List.css'>
+</head>
+
+<body>
+<div class='navbar'>
+	<a href='EmployeeList'>Employees List</a>
+	<a href='ManagerList'>Manager List</a>
+
+</div>
+<div class="container-fluid card">
+<div class="card" style="width: 40rem; margin: 4rem auto;" >
+<h2  class="card-header  bg-primary text-white text-center">Manager Registration</h2>
+<div class="card-body">
+<form action="register" method="post">
+<table class="table table-hover">
+<tr>
+<td>First Name</td>
+<td><input type="text" name="FirstName" required></td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="LastName" required></td>
+</tr>
+<tr>
+<td>Salary</td>
+<td><input type="text" name="Salary" required></td>
+</tr>
+<tr>
+<td>Department Id</td>
+<td>
+<select name="DeptId" required>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+  </select>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="text-center"><input type="submit" value="Register" class ="btn btn-primary">
+<input type="reset" name="Cancel" class ="btn btn-secondary"></td>
+</tr>
+
+</table>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
